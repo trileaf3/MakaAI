@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Phaser Game</title>
+    <link rel="stylesheet" href="{% static 'firstGame/css/style.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>  <!-- Include Phaser.js via CDN -->
+</head>
+
+<body>
+    <div id="game-container">
+        Welcome to the game
+    </div>  <!-- Container for your Phaser game -->
+    <script src="{% static 'firstGame/js/game.js' %}"></script>  <!-- Your Phaser game script -->
+
+</body>
+</html>
+
