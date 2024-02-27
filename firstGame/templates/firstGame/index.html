@@ -3,16 +3,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Phaser Game</title>
-    <link rel="stylesheet" href="{% static 'firstGame/css/style.css' %}">
-    <script src="https://cdn.jsdelivr.net/npm/phaser@3/dist/phaser.min.js"></script>  <!-- Include Phaser.js via CDN -->
+    <title> Catch Python Keywords </title>
+    <link rel="stylesheet" type="text/css" href="{% static 'firstGame/css/style.css' %}">
 </head>
 
 <body>
-    <div id="game-container">
-        Welcome to the game
-    </div>  <!-- Container for your Phaser game -->
-    <script src="{% static 'firstGame/js/game.js' %}"></script>  <!-- Your Phaser game script -->
+    <header>
+        <p> Phaser Demo | Catch Python Keywords </p>
+    </header>
+    <main>
+        <div id="gameContainer">
+            <canvas id="gameCanvas"></canvas>
+            <div id="scoreBoard">
+                <span id="score"> 0 </span>
+            </div>
+            <div id="timeBoard"> 
+                <span id="timeRemaining"> 60 </span>
+            </div>
+        </div>
+        <button id="startButton">Start Game</button>
+        <div id="finalScore"> Final Score Placeholder </div>
+    </main>
+    <footer>
+        <p> Created By MakaAI </p>
+    </footer>
+    <script type="module" defer src="{% static 'firstGame/js/gameScene.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.15.1/dist/phaser.min.js"></script>
 
 </body>
 </html>
